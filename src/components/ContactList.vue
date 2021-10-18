@@ -108,7 +108,7 @@ export default {
     },
     editContact (contact) {
       this.newContact = contact
-      this.updatingContact = !this.updatingContact
+      this.updatingContact = true
     },
     async updateContact (id) {
       const contactRef = doc(db, this.collection, id)
